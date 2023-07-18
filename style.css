@@ -84,3 +84,29 @@ nav ul{
 
 /* Funny videos styling start here */
 
+.images-videos-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+/* play instantly styling start here */
+
+.play-instantly{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fold-img{
+    position: absolute;
+    margin-top: 360px;
+    margin-left: -120px;
+}
+
+/* play games online styling start here */
+.play-games-online{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
