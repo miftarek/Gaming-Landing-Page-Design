@@ -1,0 +1,24 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+/* header style starting here */
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.color-text{
+    color: #FF42A5;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
