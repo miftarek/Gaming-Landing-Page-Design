@@ -41,6 +41,10 @@ nav ul {
     background: rgba(11, 2, 35, 0.10);
 }
 
+.menu li:hover{
+    cursor: pointer;
+}
+
 
 /* Banner style starting here */
 
@@ -89,6 +93,7 @@ button {
     font-size: 20px;
     font-weight: 600;
     color: #fff;
+    cursor: pointer;
 }
 
 .general-btn {
@@ -101,6 +106,7 @@ button {
     color: #FFF;
     font-size: 20px;
     font-weight: 600;
+    cursor: pointer;
 }
 
 .banner-img {
@@ -200,7 +206,7 @@ blockquote {
     top: -2px;
     left: 0;
     width: 100%;
-    height: 75%;
+    height: 77%;
     background-color: rgba(5, 5, 5, 0.5);
 }
 
@@ -309,6 +315,7 @@ blockquote {
     font-size: 20px;
     font-weight: 600;
     color: #FF42A5;
+    cursor: pointer;
 }
 
 .careers-img {
@@ -342,6 +349,7 @@ blockquote {
     color: #F948B2;
     border: 1px solid #F948B2;
     border-radius: 35px;
+    cursor: pointer;
 }
 
 .game-icon-item {
@@ -373,12 +381,19 @@ footer {
     gap: 20px;
     justify-content: center;
     margin: 30px 0;
+    cursor: pointer;
 }
 
 .footer-icon {
     display: flex;
     gap: 20px;
     justify-content: center;
+    cursor: pointer;
+}
+
+.fa-brands{
+    width: 25px;
+    color: #6b96f5;
 }
 
 .footer-second-menu ul {
@@ -387,6 +402,7 @@ footer {
     gap: 20px;
     justify-content: center;
     margin: 20px;
+    cursor: pointer;
 }
 
 footer p {
@@ -402,6 +418,12 @@ footer p {
         flex-direction: column;
         padding-left: 0px;
         padding-right: 0px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .banner-section, .play-games-online{
+        flex-direction: column-reverse;
     }
 
     .images-videos-grid{
@@ -440,11 +462,42 @@ footer p {
     font-size: 36px;
     margin-top: 100px;
 }
+
+.play-games-online-content, h2, p{
+    text-align: center;
+}
+
+.about-gamer h2{
+    text-align: center;
+}
+
+.about-gamer p{
+    text-align: center;
+}
+.about-gamer-content .primary-btn{
+    margin: 10px auto;
+    display: block;
+}
+.play-instanntly-content{
+    text-align: center;
+}
+
+.third-img-collab::before{
+    height: 91%;
+}
 }
 
 /* Small size device style start here */
 
 @media screen and (max-width:576px) {
+    nav ul{
+        display: block;
+    }
+
+    nav li{
+        margin-top: 20px;
+    }
+
     .menu{
         margin-left: -65px;
     }
@@ -480,5 +533,9 @@ footer p {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+
+    .third-img-collab::before{
+        height: 72%;
     }
 }
