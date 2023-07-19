@@ -2,7 +2,6 @@
     margin: 0px;
     padding: 0px;
     font-family: 'Work Sans', sans-serif;
-    max-width: 1440px;
 }
 
 /* header style starting here */
@@ -24,7 +23,7 @@
 nav {
     display: flex;
     justify-content: space-between;
-    margin: 30px;
+    margin: 20px 170px;
 }
 
 nav ul{
@@ -59,6 +58,7 @@ nav ul{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    padding: 0px 170px;
 }
 
 .banner-content {
@@ -67,7 +67,6 @@ nav ul{
 
 .banner-content h2 {
     color: #0B0223;
-    text-align: center;
     font-size: 48px;
     font-weight: 600;
     text-transform: uppercase;
@@ -78,7 +77,6 @@ nav ul{
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    text-align: center;
     font-size: 95px;
     font-weight: 800;
     text-transform: uppercase;
@@ -86,8 +84,7 @@ nav ul{
 
 .banner-content p,
 button {
-    margin: 15px;
-    margin-left: 180px;
+margin: 15px;
 }
 
 .primary-btn {
@@ -118,7 +115,7 @@ button {
     width: 50%;
 }
 
-.banner-img img {
+.banner-imgs{
     width: 100%;
 }
 
@@ -128,9 +125,9 @@ button {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
     max-height: 600px;
     background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
+    padding: 20px 150px;
 }
 
 .fancy-header {
@@ -157,7 +154,19 @@ blockquote {
     text-align: right;
 }
 
+.about-gamer-content{
+    text-align: end;
+}
+
+.about-gamer-img img{
+    width: 100%;
+}
+
 /* Funny videos styling start here */
+
+.funny-videos{
+    margin: 20px 160px;
+}
 
 .funny-videos h2 {
     color: #0B0223;
@@ -186,6 +195,12 @@ blockquote {
 }
 
 /* play instantly styling start here */
+.play-instantly {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid salmon;
+}
 
 .play-instanntly-content,
 .play-games-online-content h2 {
@@ -193,7 +208,6 @@ blockquote {
     font-size: 48px;
     font-weight: 700;
     line-height: 60px;
-    /* 125% */
 }
 
 .play-instanntly-content p {
@@ -205,15 +219,7 @@ blockquote {
     margin-top: 30px;
 }
 
-.play-instantly {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin: 50px 0;
-}
-
 .play-instant-img {
-    width: 50%;
 }
 
 .below-img {
@@ -223,7 +229,7 @@ blockquote {
 }
 
 .fold-img {
-    width: 15%;
+    width: 10%;
     height: auto;
     position: absolute;
     margin-top: 300px;
