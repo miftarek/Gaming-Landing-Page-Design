@@ -26,19 +26,19 @@ nav {
     margin: 20px 170px;
 }
 
-nav ul{
+nav ul {
     list-style: none;
     display: flex;
     gap: 20px;
     align-items: center;
 }
 
-.highlighted-menu{
+.highlighted-menu {
     display: flex;
     gap: 20px;
     padding: 10px;
     border-radius: 8px;
-    background: rgba(11, 2, 35, 0.10);    
+    background: rgba(11, 2, 35, 0.10);
 }
 
 .menu-btn {
@@ -84,7 +84,7 @@ nav ul{
 
 .banner-content p,
 button {
-margin: 15px;
+    margin: 15px;
 }
 
 .primary-btn {
@@ -115,7 +115,7 @@ margin: 15px;
     width: 50%;
 }
 
-.banner-imgs{
+.banner-imgs {
     width: 100%;
 }
 
@@ -154,17 +154,17 @@ blockquote {
     text-align: right;
 }
 
-.about-gamer-content{
+.about-gamer-content {
     text-align: end;
 }
 
-.about-gamer-img img{
+.about-gamer-img img {
     width: 100%;
 }
 
 /* Funny videos styling start here */
 
-.funny-videos{
+.funny-videos {
     margin: 20px 160px;
 }
 
@@ -197,20 +197,22 @@ blockquote {
 /* play instantly styling start here */
 .play-instantly {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    border: 1px solid salmon;
+    gap: 60px;
+    margin: 60px 160px;
 }
 
-.play-instanntly-content,
-.play-games-online-content h2 {
+.play-instanntly-content {
     text-align: right;
     font-size: 48px;
     font-weight: 700;
     line-height: 60px;
+    width: 50%;
 }
 
-.play-instanntly-content p {
+.play-instanntly-content,
+.play-games-online-content p {
     color: #534C64;
     text-align: right;
     font-size: 18px;
@@ -220,19 +222,20 @@ blockquote {
 }
 
 .play-instant-img {
+    position: relative;
 }
 
 .below-img {
     position: relative;
-    width: 70%;
+    width: 450px;
     z-index: 0;
 }
 
 .fold-img {
-    width: 10%;
+    width: 200px;
     height: auto;
     position: absolute;
-    margin-top: 300px;
+    margin-top: 340px;
     margin-left: -80px;
     z-index: 1;
 }
@@ -242,26 +245,22 @@ blockquote {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    margin: 100px 0;
+    margin: 180px 0;
 }
 
 /* careers styling start here */
-.careers {
+.careers-container {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    background-color: #F948B2;
+    padding: 0 160px;
 }
 
 .career-designation {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-.careers {
-    background-color: #F948B2;
-    width: 100%;
-
 }
 
 .careers-content {
@@ -280,6 +279,7 @@ blockquote {
     font-size: 18px;
     font-weight: 400;
     line-height: 30px;
+    margin: 20px 0;
 }
 
 .career-designation {
@@ -287,6 +287,17 @@ blockquote {
     font-size: 20px;
     font-weight: 600;
     line-height: 40px;
+}
+
+.careers-btn {
+    text-transform: uppercase;
+    padding: 20px 40px;
+    border-radius: 48px;
+    background: #FFF;
+    border: none;
+    font-size: 20px;
+    font-weight: 600;
+    color: #FF42A5;
 }
 
 .careers-img {
@@ -300,12 +311,31 @@ blockquote {
 /* Game icon features style here */
 
 .game-icon-features {
-    display: grid;
+    display: flex;
     gap: 30px;
-    grid-template-columns:repeat(5, 1fr);
-    justify-items: center;
-    align-content: center;
-    margin: 30px 0;
+    flex-basis: 150px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 80px;
+}
+
+.game-icon-features{
+    color: #0B0223;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.game-icon-active::content{
+    color: #F948B2;
+    border: 1px solid #F948B2;
+    border-radius: 35px;
+}
+
+.game-icon-item:hover{
+    color: #F948B2;
+    border: 1px solid #F948B2;
+    border-radius: 35px;
 }
 
 .game-icon-item {
@@ -317,20 +347,21 @@ blockquote {
 
 /* Footer design start here */
 
-footer{
-    background-color:#0B0223;;
+footer {
+    background-color: #0B0223;
+    ;
     color: #FFF;
     padding: 30px 0;
 }
 
-.logo-footer{
+.logo-footer {
     display: flex;
     gap: 20px;
     align-items: center;
     justify-content: center;
 }
 
-.footer-menu ul{
+.footer-menu ul {
     list-style: none;
     display: flex;
     gap: 20px;
@@ -338,12 +369,13 @@ footer{
     margin: 30px 0;
 }
 
-.footer-icon{
+.footer-icon {
     display: flex;
     gap: 20px;
     justify-content: center;
 }
-.footer-second-menu ul{
+
+.footer-second-menu ul {
     list-style: none;
     display: flex;
     gap: 20px;
@@ -351,6 +383,6 @@ footer{
     margin: 20px;
 }
 
-footer p{
+footer p {
     text-align: center;
 }
