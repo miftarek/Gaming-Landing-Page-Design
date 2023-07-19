@@ -41,14 +41,6 @@ nav ul {
     background: rgba(11, 2, 35, 0.10);
 }
 
-.menu-btn {
-    display: flex;
-    gap: 20px;
-    padding: 20px;
-    border: none;
-    border-radius: 8px;
-    background: rgba(11, 2, 35, 0.10);
-}
 
 /* Banner style starting here */
 
@@ -453,5 +445,40 @@ footer p {
 /* Small size device style start here */
 
 @media screen and (max-width:576px) {
-    
+    .menu{
+        margin-left: -65px;
+    }
+    .banner-content{
+        width: 85%;
+    }
+
+    .banner-img{
+        width: 70%;
+    }
+
+    .below-img{
+        width: 370px;
+    }
+
+    .play-games-online-content p{
+        margin: 20px 0px;
+    }
+
+    .fold-img{
+        width: 120px;
+        margin-top: 275px;
+        margin-left: -20px;
+    }
+
+    .online-fold-img{
+        width: 120px;
+        margin-top: 250px;
+        margin-left: -95px;
+    }
+
+    .footer-menu ul{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 }
