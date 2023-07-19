@@ -193,6 +193,24 @@ blockquote {
 .images-videos-grid img {
     width: 100%;
 }
+.third-img-collab{
+    position: relative;
+}
+.third-img-collab::before{
+    background-image: url(./images/circle-play-solid.svg);
+    background-size: 60px;
+    background-repeat: no-repeat;
+    background-position: center;
+    content: "";
+    text-align: center;
+    display: block;
+    position: absolute;
+    top: -2px;
+    left: 0;
+    width: 100%;
+    height: 75%;
+    background-color: rgba(5, 5, 5, 0.5);
+}
 
 
 /* play instantly styling start here */
@@ -313,24 +331,19 @@ blockquote {
 
 .game-icon-features {
     display: flex;
-    gap: 30px;
+    gap: 20px;
     flex-basis: 150px;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    margin: 30px 80px;
+    margin: 30px 0px;
+    padding: 20px;
 }
 
 .game-icon-features{
     color: #0B0223;
     font-size: 20px;
     font-weight: 600;
-}
-
-.game-icon-active::con{
-    color: #F948B2;
-    border: 1px solid #F948B2;
-    border-radius: 35px;
 }
 
 .game-icon-item:hover{
@@ -386,4 +399,59 @@ footer {
 
 footer p {
     text-align: center;
+}
+
+/* Responsive style start here */
+
+/* Tablet responsive style start here */
+
+@media screen and (max-width:768px) {
+    nav, .banner-section, .about-gamer, .play-instantly, .play-games-online, .careers-container{
+        flex-direction: column;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .images-videos-grid{
+        grid-template-columns: 1fr;
+    }
+
+    .logo{
+        justify-content: center;
+        margin: 20px 0;
+    }
+
+    .banner-section{
+        padding-top: 20px;
+    }
+
+    .banner-section, .about-gamer-content p{
+        font-size: 20px;
+    }
+    .banner-img img{
+        width: 120%;
+        margin-top: 30px;
+    }
+    .funny-videos{
+        margin-top: 150px;
+    }
+
+    .play-instanntly-content,
+.play-games-online-content p {
+    color: #534C64;
+    font-size: 22px;
+    font-weight: 400;
+    margin-top: 30px;
+}
+
+.play-games-online-content h2{
+    font-size: 36px;
+    margin-top: 100px;
+}
+}
+
+/* Small size device style start here */
+
+@media screen and (max-width:576px) {
+    
 }
