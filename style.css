@@ -194,6 +194,7 @@ blockquote {
     width: 100%;
 }
 
+
 /* play instantly styling start here */
 .play-instantly {
     display: flex;
@@ -326,7 +327,7 @@ blockquote {
     font-weight: 600;
 }
 
-.game-icon-active::content{
+.game-icon-active::con{
     color: #F948B2;
     border: 1px solid #F948B2;
     border-radius: 35px;
