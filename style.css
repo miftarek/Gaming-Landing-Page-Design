@@ -392,9 +392,34 @@ footer {
     cursor: pointer;
 }
 
-.fa-brands{
+.fa-twitter{
     width: 25px;
     color: #6b96f5;
+}
+
+.fa-facebook{
+    width: 25px;
+    color: #204491;
+}
+
+.fa-youtube{
+    width: 25px;
+    color: #f0163b;
+}
+
+.fa-linkedin{
+    width: 25px;
+    color: #0A66C2;
+}
+
+.fa-instagram{
+    width: 25px;
+    color: #E4405F;
+}
+
+.fa-apple{
+    width: 25px;
+    color: #555555;
 }
 
 .footer-second-menu ul {
@@ -423,9 +448,22 @@ footer p {
         justify-content: center;
     }
 
+    nav ul{
+        display: block;
+    }
+
+    nav li{
+        margin-top: 20px;
+    }
+
     .banner-section{
         background-position:bottom;
         background-size: 80%;
+    }
+
+    .banner-section .primary-btn, .general-btn{
+        margin: 20px auto;
+        display: block;
     }
 
     .banner-section, .play-games-online{
@@ -453,24 +491,37 @@ footer p {
         margin-top: 30px;
     }
     .funny-videos{
-        margin-top: 150px;
+        margin: 80px 100px;
     }
+
+.play-instantly{
+    margin: 0px;
+}
 
     .play-instanntly-content,
 .play-games-online-content p {
     color: #534C64;
     font-size: 22px;
     font-weight: 400;
-    margin-top: 30px;
+    margin: 30px;
+    text-align: center;
 }
 
 .play-games-online-content h2{
     font-size: 36px;
-    margin-top: 100px;
 }
 
 .play-games-online-content, h2, p{
     text-align: center;
+    margin-bottom: 20px;
+}
+
+.about-gamer-img{
+    width: 70%;
+}
+
+.about-gamer-img img{
+    width: 100%;
 }
 
 .about-gamer h2{
@@ -492,17 +543,11 @@ footer p {
 /* Small size device style start here */
 
 @media screen and (max-width:576px) {
-    nav ul{
-        display: block;
+    .banner-section{
+        background-position:bottom;
+        background-size: 100%;
     }
 
-    nav li{
-        margin-top: 20px;
-    }
-
-    .menu{
-        margin-left: -65px;
-    }
     .banner-content{
         width: 85%;
     }
@@ -536,4 +581,14 @@ footer p {
         justify-content: center;
         align-items: center;
     }
+
+    .play-instanntly-content,
+.play-games-online-content p {
+    color: #534C64;
+    font-size: 18px;
+    font-weight: 400;
+    margin: 30px;
+    text-align: center;
+}
+
 }
